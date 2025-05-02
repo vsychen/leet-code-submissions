@@ -1,0 +1,31 @@
+class Solution(object):
+    def isNumber(self, s):
+        try:
+            a = int(s)
+            return True
+        except:
+            return False
+
+    def myAtoi(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        temp = list(s.strip())
+        number = []
+
+        for i in range(len(temp)):
+            if i == 0:
+                if temp[0] == "-" or self.isNumber(temp[0]): number.append(temp[0])
+                elif temp[0] != "+": break
+            else:
+                if self.isNumber(temp[i]): number.append(temp[i])
+                else: break
+        
+        number = "".join(number)
+        if number in ["", "+", "-"]: return 0
+        else:
+            a = int(number)
+            if a < -2147483648: return -2147483648
+            elif a > 2147483647: return 2147483647
+            else: return a
