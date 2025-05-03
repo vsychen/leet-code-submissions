@@ -1,4 +1,10 @@
 class Solution(object):
+    # ALGORITHM: NONE/BRUTE FORCE
+    # Remove any leading spaces. Starting from the first non-space character, check for any numbers. The first character can be "+", "-" or
+    # start directly as a number. The following characters must be a number. If not a number, end search.
+    # If the string found is "", "+" or "-", there is no number, return 0.
+    # If not, convert the number to a integer and check if its in the boundaries of a 32-bit signed integer. 
+    # If yes, return the integer; if not, return the max values of a 32-bit signed integer
     def isNumber(self, s):
         try:
             a = int(s)

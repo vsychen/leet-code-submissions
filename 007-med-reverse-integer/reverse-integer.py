@@ -1,4 +1,7 @@
 class Solution(object):
+    # ALGORITHM: NONE
+    # Identify if the number is positive or negative. Cast the integer as a list of characters and reverse this list. If necessary, add the negative 
+    # symbol ("-") again and cast this list of characters as an integer. If the number exceeds the 32-bit integer constraints, return 0 instead.
     def reverse(self, x):
         """
         :type x: int

@@ -1,4 +1,16 @@
 class Solution(object):
+    # ALGORITHM: BRUTE FORCE
+    # Split the pattern into tokens - specific character (a), wildcard character (.), zero or more specific characters (*a) and zero or more wildcard characters (*.).
+    # Changed the order of the "zero or more character" for convenience (a* -> *a; .* -> *.)
+    # Simplified the tokens (if the pattern is *a*., this is the same as *. because *a can be ZERO or more. similarly, *a*a is the same as *a).
+    # Match tokens with string. Basecase: (1) if the length of the string is 0 and length of tokens is zero, string matches pattern; (2) if length of the string is 
+    # not zero and length of tokens is zero, string does not matches the pattern. (3) if length of the string is zero but the length of the tokens is not zero, 
+    # check if the remaining tokens are "zero or more" tokens to decide if string matches pattern.
+    # If token is not "zero or more", match the current character with the token. If matches, go to next character/token.
+    # If token is "zero or more specific characters", need to check if any of the strings containing this specific character matches the pattern
+    # (aaab -> check if any of <aaab, aab, ab, b> matches the rest of the pattern)
+    # If token is "zero or more wildcard characters", need to check if any of the following strings matches the pattern.
+    # (abcd -> check if any of <abcd, bcd, cd, d> matches the rest of the pattern)
     def getTokens(self, p):
         temp = list(p)
         for i in range(len(temp)):
