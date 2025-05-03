@@ -1,4 +1,8 @@
 class Solution(object):
+    # ALGORITHM: LIFO/FILO (Last In, First Out / First In, Last Out)
+    # Check all characters of the list. If character is open type "(", "[" or "{", add to the stack. If the character is close type ")", "]" or "}", remove from stack
+    # if it matches the top of the stack (in Python, the last position of the list). Ex.: Add "(" to stack -> Rem "]" from stack -> NOT VALID COMBINATION
+    # At the end, check if the input and the stack is empty. If any of them are not, the string is not valid.
     def isValid(self, s):
         """
         :type s: str

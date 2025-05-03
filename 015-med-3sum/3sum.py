@@ -1,4 +1,9 @@
 class Solution(object):
+    # ALGORITHM: BRUTE FORCE
+    # Sort the numbers. Fix the first of the three numbers. Move the second number up and the third one down while the sum is different than -(first number).
+    # If the sum is greater than the target, move the third number down; if the sum is less than the target, move the second number up. If 3sum not found, 
+    # check for the next "first number".
+    # Observations: first number <= 0 and third number >= 0 because of the sort.
     def threeSum(self, nums):
         """
         :type nums: List[int]

@@ -1,4 +1,7 @@
 class Solution(object):
+    # ALGORITHM: BRUTE FORCE
+    # Sort the strings by the size and get the longest one. For each of the other strings, check which characters are common to both base_string and the current string.
+    # The answer will be any characters before "" in the base_string list of characters ("" means the character was not present in that position in some strings)
     def longestCommonPrefix(self, strs):
         """
         :type strs: List[str]

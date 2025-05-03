@@ -1,4 +1,9 @@
 class Solution(object):
+    # ALGORITHM: BRUTE FORCE
+    # Sort the list of nums. Fix the middle number. Move first number up and third number down accordingly to the sum of the three numbers (if sum is less than
+    # target, move first number up; if sum is greater than target, move third number down). At the same time, for each new sum, check the difference between 
+    # threesum and target and save the threesum if the new difference is less than previous difference.
+    # If threesum = target, answer is threesum; if none of the threesum = target, answer is the threesum that has the least difference (up or down) with target.
     def threeSumClosest(self, nums, target):
         """
         :type nums: List[int]

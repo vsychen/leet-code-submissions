@@ -1,4 +1,8 @@
 class Solution(object):
+    # ALGORITHM: BRUTE FORCE
+    # Sort the list of integers. Fix the first and last numbers. While the sum of the four numbers is not equal to target, move the second number up if 
+    # the sum is less than target and the third number down if the sum is greater than target. If the sum is equal to target, save the combination and 
+    # check for the next numbers (move first and/or last numbers up/down, respectively).
     def fourSum(self, nums, target):
         """
         :type nums: List[int]
