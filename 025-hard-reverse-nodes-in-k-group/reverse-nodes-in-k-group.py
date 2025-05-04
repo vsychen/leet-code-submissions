@@ -4,6 +4,11 @@
 #         self.val = val
 #         self.next = next
 class Solution(object):
+    # ALGORITHM: DIVIDE AND CONQUER
+    # First check if the list has k nodes. If no, just return the list (it is not necessary to reverse them, as they do not have k nodes).
+    # If there is k nodes, put all of these nodes in a list and, while visiting them in reverse (by list), change their node.next to the previous node (instead of next).
+    # Repeat this operation for the next batch of k nodes and set the node.next of the previous first node (current last node) to the return of this recursive call.
+    # Return the previous last node (currently first node). 
     def checkIfHasKNodes(self, head, k):
         for _ in range(k):
             if head == None: return False

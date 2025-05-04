@@ -1,4 +1,10 @@
 class Solution(object):
+    # ALGORITHM: 
+    # If there is some substring in words that do not exist in s, return (s needs to contain all substrings of words). If words only have one substring that repeats
+    # many times (["a", "a", "a"]), the only word possible for it is a concatenation of all elements ("aaa"), so just check the indexes of this string.
+    # Because the question asks for all indexes of the combinations of substrings, it is necessary to check s entirely, instead of checking if each possible word is in s.
+    # If s starts with any of the substrings in word, try replacing the start of the substring s' with each of words substrings. If its possible to replace s' with words
+    # substrings, it means a combination of words substrings starts in that index. Continue exploring s until all indexes are found.
     def tryString(self, s, words):
         if len(s) == 0: return True
         elif len(list(set(words))) == 1 and len(words) != 1: return ("".join(words)) == s
