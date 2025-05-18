@@ -1,4 +1,7 @@
 class Solution(object):
+    # ALGORITHM: NONE
+    # Starting from the end, search for first occurrence of nums[i-1] < nums[i]. Save nums[i-1] and, starting from the end again, search for first occurrence of 
+    # nums[i-1] < nums[j]. Switch those two numbers and sort the elements of nums from i onwards, while maintaining the order for the previous elements.
     def sortedInReverse(self, nums):
         for i in range(len(nums)-1):
             if nums[i] < nums[i+1]: return False
