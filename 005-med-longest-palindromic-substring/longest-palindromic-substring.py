@@ -1,5 +1,5 @@
 class Solution(object):
-    # ALGORITHM: MODIFIED BRUTE FORCE/PYTHON TIMSORT (MERGESORT+INSERTIONSORT)
+    # TOPICS: STRING/TWO POINTERS
     # First, add all strings that start and end with same character in a list and sort this list in a reverse order (the longest string will then be the first element)
     # Check if the words are palindrome. If one palindrome is found, return it as the answer (it will necessarily be the longest palindrome because of the sort)
     def isPalindrome(self, s):

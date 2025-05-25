@@ -1,5 +1,5 @@
 class Solution(object):
-    # ALGORITHM: DIVIDE AND CONQUER/BINARY SEARCH
+    # TOPICS: ARRAY/BINARY SEARCH
     # First, do the classic binary search. If target not found, return -1. If target found, search for the first and last occurrence of target. Because the list is sorted, all
     # occurrences of target are at grouped together.
     def binarySearch(self, nums, target):

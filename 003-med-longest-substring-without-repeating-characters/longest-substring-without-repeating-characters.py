@@ -1,5 +1,5 @@
 class Solution(object):
-    # ALGORITHM: BRUTE FORCE
+    # TOPICS: STRING
     # For each character of a string, check the substring that it starts. While the next character is not duplicated, continue checking the next character.
     # When a duplicated character is found, return the size of this substring and check if it is the longest yet. If yes, update the size of the longest substring.
     # Because of the questions constraints, the longest substring possible should have 95 characters, at most. If it is found, it is not necessary to continue searching.

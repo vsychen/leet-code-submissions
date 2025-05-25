@@ -1,5 +1,5 @@
 class Solution(object):
-    # ALGORITHM: BRUTE FORCE
+    # TOPICS: STRING/RECURSION
     # Split the pattern into tokens - specific character (a), wildcard character (.), zero or more specific characters (*a) and zero or more wildcard characters (*.).
     # Changed the order of the "zero or more character" for convenience (a* -> *a; .* -> *.)
     # Simplified the tokens (if the pattern is *a*., this is the same as *. because *a can be ZERO or more. similarly, *a*a is the same as *a).

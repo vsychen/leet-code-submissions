@@ -1,5 +1,5 @@
 class Solution:
-    # ALGORITHM: FILO/LIFO (First In, Last Out/Last In, First Out)
+    # TOPICS: STRING/STACK
     # After initializing the stack, check the string for "(" and ")" chars. If "(", append its index to the stack. If ")", check if there's a corresponding "(" in the stack.
     # If there is not, update the stack index (effectively resetting the count of valid parenthesis). If there is a corresponding "(", set the difference between the current
     # index and the index of the last "invalid" parenthesis as the length of the valid parenthesis substring. If this length is greater than max_length, update it as well.

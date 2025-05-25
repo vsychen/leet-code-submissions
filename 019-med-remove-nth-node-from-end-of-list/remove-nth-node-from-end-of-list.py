@@ -4,7 +4,7 @@
 #         self.val = val
 #         self.next = next
 class Solution(object):
-    # ALGORITHM: NONE
+    # TOPICS: LINKED LIST
     # Get the size of the list. Remove the (size-n)th node from the list. To remove it, it is necessary to point the previous node to the next node.
     # [Node 1 -> Node 2 -> Node 3] ---remove node 2---> [Node 1 -> Node 3]
     # Node 1 (previous node) needs to point to Node 3 (next node)

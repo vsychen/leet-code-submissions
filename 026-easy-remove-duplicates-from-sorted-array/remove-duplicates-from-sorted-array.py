@@ -1,5 +1,5 @@
 class Solution(object):
-    # ALGORITHM: NONE/BRUTE FORCE
+    # TOPICS: ARRAY
     # The list is sorted, so check if the element has the same value as the next element. If yes, remove the next element (do not go to the next element yet, because
     # it is possible to have more than duplicates). If not duplicate, go to the next element.
     def removeDuplicates(self, nums):

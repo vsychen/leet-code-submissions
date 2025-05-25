@@ -1,5 +1,5 @@
 class Solution(object):
-    # ALGORITHM: BRUTE FORCE/MERGESORT
+    # TOPICS: ARRAY/RECURSION/DIVIDE AND CONQUER
     # Using mergesort, merge the two sorted lists into one sorted list. If the size of this sorted list is odd, return the middle value of the list as the median.
     # If the size of this sorted list is even, sum the two middle values of the list and divide by two to have the median.
     def medianSortedArrays(self, nums1, nums2, counter, odd):

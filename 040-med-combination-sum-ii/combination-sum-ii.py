@@ -1,5 +1,5 @@
 class Solution(object):
-    # ALGORITHM: BRUTE FORCE
+    # TOPICS: ARRAY/BACKTRACKING
     # Sort the candidates list in a decreasing order and remove any values higher than the target, as they could not sum up to the target value (all values are positive)
     # Because of questions restraints, its not possible that the same element appear two times in the combination (although its possible for the value to appear two or more
     # times, if there's two or more elements with the same value). Check the entire list and see which combination sums up to the target. In case of multiple elements having

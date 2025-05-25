@@ -1,5 +1,5 @@
 class Solution(object):
-    # ALGORITHM: NONE/BRUTE FORCE
+    # TOPICS: STRING
     # Calculate the total num of columns and rows that the matrix will have. Fill the matrix with the string characters using the pattern mentioned.
     # Transpose the matrix, so that the rows become the columns and the columns become the rows.
     def convert(self, s, numRows):

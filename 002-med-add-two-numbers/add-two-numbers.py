@@ -4,7 +4,7 @@
 #         self.val = val
 #         self.next = next
 class Solution(object):
-    # ALGORITHM: NONE/BRUTE FORCE
+    # TOPICS: LINKED LIST/RECURSION/MATH
     # Just sum the values of the nodes of the two Linked Lists. If there's a carry on, it is necessary to add it to the next sum.
     def addTwoNumbers2(self, l1, l2, carry):
         n1 = 0 if not l1 else l1.val

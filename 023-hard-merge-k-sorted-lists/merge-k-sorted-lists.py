@@ -4,7 +4,7 @@
 #         self.val = val
 #         self.next = next
 class Solution(object):
-    # ALGORITHM: MERGESORT
+    # TOPICS: LINKED LIST/DIVIDE AND CONQUER
     # Check all first nodes from all lists for the smaller node. The smaller node will be the current node and the next node will be the result of the recursive
     # call of the function. Because all first nodes are checked for the smaller node, the end list (containing all lists) will be sorted from smaller to bigger
     # values.

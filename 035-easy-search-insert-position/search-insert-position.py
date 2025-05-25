@@ -1,5 +1,5 @@
 class Solution(object):
-    # ALGORITHM: DIVIDE AND CONQUER/BINARY SEARCH
+    # TOPICS: ARRAY/BINARY SEARCH
     # Classic binary search. If found, return index. If not found, return index of the first element greater than target instead of -1.
     def binarySearch(self, nums, target):
         if len(nums) == 0: return 0

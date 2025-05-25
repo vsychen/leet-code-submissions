@@ -1,5 +1,5 @@
 class Solution(object):
-    # ALGORITHM: DIVIDE AND CONQUER/BINARY SEARCH
+    # TOPICS: ARRAY/BINARY SEARCH
     # First, to find how much the sorted list is dislocated, a modified binary search is used. Instead of finding the target number, it searches for the lesser value using binary search.
     # With the position of the lesser value found, the list can be rearranged to be sorted again and, this time, a classic binary search is used to find the value. At the end, it is
     # necessary to sum the index of the target with the list offset and return the module of this sum, which will be the index of the element in the dislocated list.

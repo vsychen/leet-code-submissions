@@ -1,5 +1,5 @@
 class Solution(object):
-    # ALGORITHM: MODIFIED BRUTE FORCE
+    # TOPICS: MATH/BIT MANIPULATION
     # Multiply the divisor by 2 until it is greater than dividend. Divide the divisor by 2 one time. This forces the divisor to be less than, or equal to the dividend.
     # If equal, return the quocient. If almost equal [((quocient-1)*divisor) < dividend < (divisor*quocient)], return quocient-1 (truncate towards zero).
     # Recursively call the method (instead of finding the quocient by doing "-x/+x" operations, it is more cost-effective to do "-y/+y" operations, where y is 2^z).

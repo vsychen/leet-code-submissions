@@ -1,5 +1,5 @@
 class Solution(object):
-    # ALGORITHM: NONE/BRUTE FORCE
+    # TOPICS: STRING
     # Simple recursion, while counting the quantity of adjacent equal characters.
     def countAndSay(self, n):
         """

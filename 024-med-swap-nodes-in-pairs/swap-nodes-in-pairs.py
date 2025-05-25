@@ -4,7 +4,7 @@
 #         self.val = val
 #         self.next = next
 class Solution(object):
-    # ALGORITHM: NONE/BRUTE FORCE
+    # TOPICS: LINKED LIST/RECURSION
     # Base case, if list is empty, return empty list; if list has only one element, return said element.
     # The swap is done in pairs because our base case includes both cases node = None and node.next = None. If head = None, the list has even number of nodes, and 
     # all of them aready swapped. If head.next = None, the list has and odd number of nodes, and the last node does not need to swap. For the step cases, it is

@@ -1,5 +1,5 @@
 class Solution(object):
-    # ALGORITHM: BRUTE FORCE
+    # TOPICS: ARRAY
     # Test all combinations of sum. After finding one that results in the target value, return the indexes of the terms.
     def twoSum(self, nums, target):
         """

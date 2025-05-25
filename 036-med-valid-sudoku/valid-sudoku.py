@@ -1,5 +1,5 @@
 class Solution(object):
-    # ALGORITHM: BRUTE FORCE
+    # TOPICS: ARRAY/MATRIX
     # First, check if elements from a row are duplicated (except ".", which can be duplicated). Then, transpose the matrix and check if the elements of the columns (now, rows) 
     # are duplicated. At last, split the lists in groups of three numbers and organize them in three groups of three numbers (each of them being one small square) and then 
     # check if there are duplicated elements in them.

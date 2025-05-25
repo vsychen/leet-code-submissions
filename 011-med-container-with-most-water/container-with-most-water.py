@@ -1,5 +1,5 @@
 class Solution(object):
-    # ALGORITHM: BRUTE FORCE
+    # TOPICS: ARRAY/GREEDY/TWO POINTERS
     # Start checking the area using the first and last elements from the list. If the height of the new "column" is less than the max_height, it is not necessary
     # to check the area (as the calculations started with the maximum value for length and have smaller values over time, the area will only be bigger if the 
     # height increases). Another observation is that the height used to calculate the area will be the smaller value between the two columns.

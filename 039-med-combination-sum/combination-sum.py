@@ -1,5 +1,5 @@
 class Solution(object):
-    # ALGORITHM: BRUTE FORCE
+    # TOPICS: ARRAY/BACKTRACKING
     # Sort the candidates in a descending order. For each candidate, check if it is less than or equal to the target. If equal to target, add it to the answer and verify the next
     # combination.
     # Observation: for input ([1,2,3], 5), both [3,2] and [3,1,1] are valid and should be in the answer. Need to continue checking the combinations of [3, ...] even after [3,2] 

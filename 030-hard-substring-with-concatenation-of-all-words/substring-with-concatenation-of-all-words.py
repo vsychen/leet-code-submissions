@@ -1,5 +1,5 @@
 class Solution(object):
-    # ALGORITHM: 
+    # TOPICS: STRING
     # If there is some substring in words that do not exist in s, return (s needs to contain all substrings of words). If words only have one substring that repeats
     # many times (["a", "a", "a"]), the only word possible for it is a concatenation of all elements ("aaa"), so just check the indexes of this string.
     # Because the question asks for all indexes of the combinations of substrings, it is necessary to check s entirely, instead of checking if each possible word is in s.

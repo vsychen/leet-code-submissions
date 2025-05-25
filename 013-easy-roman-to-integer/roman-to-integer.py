@@ -1,5 +1,5 @@
 class Solution(object):
-    # ALGORITHM: NONE
+    # TOPICS: STRING/MATH
     # Get each character and transform it in an integer to sum to the total value. If the character have greater value than the previous one, it is necessary to
     # subtract two times of the previous character to compensate the previous adding (IX -> Add 1 -> Add 10 -> Subtract 2 -> Total 9)
     def translate(self, c):

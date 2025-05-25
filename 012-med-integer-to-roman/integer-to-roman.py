@@ -1,5 +1,5 @@
 class Solution(object):
-    # ALGORITHM: NONE
+    # TOPICS: STRING/MATH
     # Divide the number and use the quocient and remainder to find the Roman representation of the number. Because the options are limited, instead of calculating 
     # how many characters should go to each string, they were listed in a if/else structure, optimizing the time needed to get the answers.
     def milhar(self, m):

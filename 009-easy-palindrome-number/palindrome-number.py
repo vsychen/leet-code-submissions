@@ -1,6 +1,6 @@
 class Solution(object):
-    # ALGORITHM: NONE
-    # Cast the integer as a list of characters. Reverse the list of characters. Compare the two strings.
+    # TOPICS: MATH
+    # Cast the integer as a list of characters. Reverse the list of characters. Compare the two lists.
     def isPalindrome(self, x):
         """
         :type x: int

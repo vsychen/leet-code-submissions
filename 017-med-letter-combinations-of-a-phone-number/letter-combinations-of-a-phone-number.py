@@ -1,5 +1,5 @@
 class Solution(object):
-    # ALGORITHM: BRUTE FORCE
+    # TOPICS: STRING
     # For each digit, combine the equivalent characters with the substrings received by recursion. Return all of these combinations.
     def digits(self, d):
         if d == "2": return ["a", "b", "c"]
