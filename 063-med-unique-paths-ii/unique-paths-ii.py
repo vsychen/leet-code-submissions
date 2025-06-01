@@ -9,11 +9,16 @@ class Solution(object):
         :type obstacleGrid: List[List[int]]
         :rtype: int
         """
-        if obstacleGrid[-1][-1] == 1: return 0
+        if obstacleGrid[0][0] == 1 or obstacleGrid[-1][-1] == 1: return 0
         grid = [[-1 if obstacleGrid[i][j] == 1 else 0 for j in range(len(obstacleGrid[i]))] for i in range(len(obstacleGrid))]
-        grid[0] = [1 if x == 0 else -1 for x in grid[0]]
+
+        for i in range(len(grid[0])):
+            if grid[0][i] == 0: grid[0][i] = 1
+            else: break
+        
         for i in range(1, len(grid)):
             if grid[i][0] == 0: grid[i][0] = 1
+            else: break
 
         for i in range(1, len(grid)):
             for j in range(1, len(grid[i])):
@@ -22,4 +27,5 @@ class Solution(object):
                     if up != -1: grid[i][j] += up
                     left = grid[i-1][j]
                     if left != -1: grid[i][j] += left
+        
         return grid[-1][-1]
